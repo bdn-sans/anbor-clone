@@ -1,0 +1,230 @@
+.contactSection {
+  padding: 40px 0;
+  background-size: cover;
+  position: relative;
+}
+
+.contactSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.mapContainer {
+  flex: 1;
+  position: relative;
+}
+
+.mapImage {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapInfo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapInfo h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.mapInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.contactInfo {
+  flex: 1;
+  text-align: left;
+}
+
+.contactTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactDetail {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactText {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.contactText:hover {
+  text-decoration: underline;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.phoneWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.countrySelect {
+  padding: 10px 15px;
+  border: 2px solid #00b7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2300b7eb' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  flex: 1;
+  max-width: 120px;
+}
+
+.countrySelect:focus {
+  border-color: #0097c7;
+  outline: none;
+}
+
+.input {
+  padding: 10px 15px;
+  border: 2px solid #00b7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #0097c7;
+  outline: none;
+}
+
+textarea.input {
+  height: 120px;
+  resize: vertical;
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #555;
+}
+
+.submitButton {
+  padding: 12px 24px;
+  background-color: #00b7eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submitButton:hover {
+  background-color: #0097c7;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mapContainer {
+    width: 100%;
+  }
+
+  .contactInfo {
+    width: 100%;
+  }
+
+  .phoneWrapper {
+    flex-direction: column;
+  }
+
+  .countrySelect {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  textarea.input {
+    width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

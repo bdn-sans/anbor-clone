@@ -1,0 +1,94 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00b7eb;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.navLink:hover {
+  color: #00b7eb;
+}
+
+.bookButton {
+  background-color: #00b7eb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.bookButton:hover {
+  background-color: #0097c7;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+}

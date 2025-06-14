@@ -1,0 +1,89 @@
+.whyChoose {
+  background-color: #b3e5fc;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content {
+  position: relative;
+  min-height: 300px;
+  z-index: 1;
+}
+
+.personImage {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  z-index: 0;
+}
+
+.screenImage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  z-index: 0;
+}
+
+.text {
+  max-width: 400px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.footerText {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .personImage, .screenImage {
+    position: static;
+    transform: none;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .text {
+    max-width: 100%;
+    text-align: center;
+  }
+}

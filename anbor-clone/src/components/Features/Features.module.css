@@ -1,0 +1,160 @@
+.features {
+  padding: 20px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  background-color: #fff;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-size: 16px;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.possibilities {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.possibilityItem {
+  position: relative;
+  width: 240px;
+  height: 250px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.possibilityText {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.hoverText {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.possibilityItem:hover .hoverText {
+  cursor: pointer;
+  display: flex;
+  opacity: 1;
+}
+.picon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.viewAllButton {
+  background-color: #00b7eb;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.viewAllButton:hover {
+  background-color: #0097c7;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: 200px;
+    max-width: 200px;
+  }
+
+  .possibilities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+}
